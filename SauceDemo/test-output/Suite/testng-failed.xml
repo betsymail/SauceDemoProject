@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="TestClassCart(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.SauceDemo.scripts.TestClassCart">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC04_verifyItems"/>
+          <include name="onSetUp"/>
+        </methods>
+      </class> <!-- com.SauceDemo.scripts.TestClassCart -->
+    </classes>
+  </test> <!-- TestClassCart(failed) -->
+  <test thread-count="1" parallel="tests" name="TestClassCheckOutStepTwo(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.SauceDemo.scripts.TestClassCheckOutStepTwo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC08_verifyCheckOutStepTwo"/>
+          <include name="onSetUp"/>
+        </methods>
+      </class> <!-- com.SauceDemo.scripts.TestClassCheckOutStepTwo -->
+    </classes>
+  </test> <!-- TestClassCheckOutStepTwo(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+
+<test thread-count="5" name="SauceDemoTest">
+  <parameter name="browser" value="chrome"/> 
+    <classes>
+    	<class name="com.SauceDemo.scripts.TestClassLogin"/>
+		<class name="com.SauceDemo.scripts.TestClassInventory"/>
+		<class name="com.SauceDemo.scripts.TestClassCart"/>
+		<class name="com.SauceDemo.scripts.TestClassCheckOutStepOne"/>
+		<class name="com.SauceDemo.scripts.TestClassCheckOutStepTwo"/>
+		<class name="com.SauceDemo.scripts.TestClassCheckOutComplete"/>
+		<class name="com.SauceDemo.scripts.TestClassLogout"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
